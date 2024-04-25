@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #000;
+}
+body::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0,5;
+    width: 100%;
+    height: 100%;
+    background: url("R.jpg");
+    background-position: center;
+}
+.form-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    padding: 70px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center; /* Center align content */
+}
+
+.form-wrapper h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.form-control input {
+    height: 50px;
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+.form-control label {
+    position: absolute;
+    left: 20px;
+    top: -20px; /* Position label above input */
+    font-size: 0.75rem;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    background: #444;
+    padding: 16px 20px 0; /* Adjusted padding for focused/valid state */
+}
+
+.form-control input:focus ~ label,
+.form-control input:valid ~ label {
+    top: -20px;
+    font-size: 0.75rem;
+}
+
+form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: #e50914;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+form button:hover {
+    background: #c40812;
+}
+
+.form-wrapper a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.form-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.form-wrapper p {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.form-wrapper small {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #b3b3b3;
+}
+
+.form-wrapper small a {
+    color: #0071eb;
+}
